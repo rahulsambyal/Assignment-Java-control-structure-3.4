@@ -1,0 +1,55 @@
+package Java;
+import java.util.*;
+class Java{
+	String sname1;
+	String sname2;
+	String sname3;
+	int smarks1;
+	int smarks2;
+	int smarks3;
+		public Java(){
+			
+		}
+	public static void main(String[] args)
+	{String sname1;
+	String sname2;
+	String sname3;
+	int smarks1;
+	int smarks2;
+	int smarks3;
+		Scanner scan = new Scanner(System.in);
+		Scanner scan1 = new Scanner(System.in);
+		Scanner scan2 = new Scanner(System.in);
+		System.out.println("Enter the name of student1");
+		sname1 = scan.nextLine();
+		System.out.println("Enter the Marks of student1");
+		smarks1 = scan.nextInt();
+		System.out.println("Enter the name of student2");
+		sname2 = scan1.nextLine();
+		System.out.println("Enter the Marks of student2");
+		smarks2 = scan1.nextInt();
+		System.out.println("Enter the name of student3");
+		sname3 = scan2.nextLine();
+		System.out.println("Enter the Marks of student3");
+		smarks3 = scan2.nextInt();	
+		Java t= new Java();
+		String a= result(smarks1);
+		System.out.println(a);
+		String b= result(smarks2);
+		System.out.println(b);
+		String c= result(smarks3);
+		System.out.println(c);
+	}	
+	public static String result(int i){
+		String res;
+		if(i>30)
+		{
+			res="Passed";
+		}
+		else
+		{
+			res="Failed";
+		}
+		return res;
+	}
+}	
